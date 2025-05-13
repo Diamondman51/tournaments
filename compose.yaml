@@ -9,8 +9,7 @@
 # https://github.com/docker/awesome-compose
 services:
   tournaments:
-    build:
-      context: .
+    image: diamondman51/tournaments:latest
     ports:
       - 8000:8000
     volumes:

@@ -13,6 +13,12 @@ from app.models.tournament import Participant, Tournament as TournamentModel, en
 app = FastAPI()
 
 
+app.title = "Tournaments"
+app.version = "1.0"
+app.summary = """Application for managing tournaments using only asyncronous programming"""
+
+
+
 async def get_async_session():
     async with AsyncSession(engine_async) as session:
         return session
